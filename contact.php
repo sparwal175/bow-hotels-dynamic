@@ -1,5 +1,10 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "bow-hotels-db");
+$db_host = $_ENV['DB_HOST'];
+$db_username = $_ENV['DB_USERNAME'];
+$db_password = $_ENV['DB_PASSWORD'];
+$db_name = $_ENV['DB_NAME'];
+
+$conn = mysqli_connect($db_host, $db_username, $db_password, $db_name);
 
 // Check connection
 if($conn === false){
