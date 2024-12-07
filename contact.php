@@ -1,5 +1,5 @@
 <?php
-$db_host = "clcm3504-cicd-exam-sandeep-dbs.czptxhzjxjrt.us-east-1.rds.amazonaws.com";
+$db_host = "clcm3504-cicd-exam-sandeep-db.czptxhzjxjrt.us-east-1.rds.amazonaws.com";
 $db_username = "admin";
 $db_password = "Admin12321";
 $db_name = "bow-hotels-db";
