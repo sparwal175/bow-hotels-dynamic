@@ -1,8 +1,8 @@
 <?php
-$db_host = $_ENV['DB_HOST'];
-$db_username = $_ENV['DB_USERNAME'];
-$db_password = $_ENV['DB_PASSWORD'];
-$db_name = $_ENV['DB_NAME'];
+$db_host = "clcm3504-cicd-exam-sandeep-dbs.czptxhzjxjrt.us-east-1.rds.amazonaws.com";
+$db_username = "admin";
+$db_password = "Admin12321";
+$db_name = "bow-hotels-db";
 
 $conn = mysqli_connect($db_host, $db_username, $db_password, $db_name);
 
