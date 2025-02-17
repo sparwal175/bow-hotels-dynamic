@@ -4,12 +4,10 @@ $db_username = "admin";
 $db_password = "Admin12321";
 $db_name = "bow-hotels-db";
 
-$conn = mysqli_connect($db_host, $db_username, $db_password, $db_name);
-
-// Check connection
-if($conn === false){
-	die("ERROR: Could not connect. "
-		. mysqli_connect_error());
+try {
+    $conn = mysqli_connect($db_host, $db_username, $db_password, $db_name);
+} catch (Exception $e) {
+    throw new Exception("Database Connect Error!");
 }
 
 // Taking all 5 values from the form data(input)
